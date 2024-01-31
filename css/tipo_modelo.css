@@ -1,0 +1,120 @@
+@import url('https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css');
+*{
+    font-family: system-ui, sans-serif;
+}
+
+button.neumorphic {
+  container-type: inline-size;
+  aspect-ratio: 1/1;
+  border: 0.5rem solid transparent;
+  border-radius: 1rem;
+  color: hsl(0 0% 10%);
+  background: none;
+  width: 150px; /* Ajusta el ancho del cuadro según tus necesidades */
+  height: 150px; /* Ajusta la altura del cuadro según tus necesidades */
+  
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+  
+  --shadow: 
+    -.5rem -.5rem 1rem hsl(0 0% 100% / .75),
+    .5rem .5rem 1rem hsl(0 0% 50% / .5);
+  box-shadow: var(--shadow);
+  outline: none;  
+  transition: all 0.1s;
+  
+  &:hover, &:focus-visible {
+    color: hsl(10 80% 50%);
+    scale: 1.1;
+  }
+  &:active, &.active{
+    box-shadow:
+      var(--shadow),
+      inset .5rem .5rem 1rem hsl(0 0% 50% / .5),
+      inset -.5rem -.5rem 1rem hsl(0 0% 100% / .75);
+    color: hsl(10 80% 50%);
+    > i { font-size: 28px; } /* Ajusta el tamaño del icono aquí */
+    > span { font-size: 13px; } /* Ajusta el tamaño del texto aquí */
+  }
+
+  > i {
+    font-size: 31px; /* Tamaño del icono predeterminado */
+  }
+  > span {
+    font-family: system-ui, sans-serif;
+    font-size: 16px; /* Tamaño del texto predeterminado */
+  }
+}
+
+body {
+  background-color: #e5e9f4;
+  padding: 2rem;
+}
+h1 {
+  text-align: center;
+  color: hsl(0 0% 10%);
+  font-family: system-ui, sans-serif;
+  font-size: 3rem;
+}
+.buttons {
+  display: grid;
+  width: min(75rem, 100%);
+  margin-inline: auto;
+  grid-template-columns: repeat(auto-fit, minmax(min(8rem, 100%), 1fr));
+  gap: 2rem;
+}
+
+#neumorphic{
+    width: 120px;
+    height: 70px;
+    margin-top: 15px;
+}
+
+#tam{
+  margin-right: 200px;
+}
+
+#nn{
+    margin-top: 50px;
+}
+
+
+.marginl{
+    margin-left: 100px;
+}
+
+#neumorphic:nth-child(4) {
+    margin-right: 500px; /* Puedes ajustar el valor del margen según tus necesidades */
+}
+
+img{
+  margin-top: 40px;
+  height: 153px;
+  width: 170px;
+  border-radius: 10px;
+}
+
+h2{
+  display: inline-block;
+  margin-left: 250px;
+  font-size: 30px;
+}
+
+.h22{
+  margin-left: 450px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.atras{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.atras:hover{
+  color: red;
+}

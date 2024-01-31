@@ -1,0 +1,98 @@
+*{
+    background-color: #e5e9f4;
+    font-family: system-ui, sans-serif;
+  }
+
+
+.titulo {
+    font-size: 25px;
+}
+
+.motor {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.atras {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 20px; /* Espacio entre el botón Atras/Repuestos y la tabla */
+    margin-top: 20px; /* Agregado para dar espacio en la parte superior */
+    margin-left: 20px; /* Alineación a la izquierda */
+}
+
+
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+th, td {
+    
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+.tabla{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    margin: 0;
+    background-color: #e5e9f4;
+    font-family: system-ui, sans-serif;
+}
+
+
+th {
+    
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+    
+}
+
+.vermas {
+    display: flex;
+    align-items: flex-end;
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px; /* Espacio entre la tabla y el botón Ver mas ofertas */
+}
+
+.vermas:hover {
+    color: red;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover {
+    color: red;
+}
+
+.ofertas {
+    display: flex;
+    justify-content: flex-end;
+}
